@@ -48,7 +48,7 @@ def main():
                     send_message(CHAT_ID_PRIVADO_2, mensaje_error)
                     print("Notificación privada enviada por error 500 a ambos usuarios.")
         if time.time() - last_seen > heartbeat_timeout:
-            alerta = "¡Alerta! No se recibió ningún mensaje en el grupo en los últimos 10 segundos."
+            alerta = "¡Alerta BOT 2! No se recibió ningún mensaje en el grupo en los últimos 10 segundos."
             send_message(CHAT_ID_PRIVADO_1, alerta)
             send_message(CHAT_ID_PRIVADO_2, alerta)
             print("Alerta enviada por inactividad a ambos usuarios.")
